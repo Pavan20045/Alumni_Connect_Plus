@@ -8,7 +8,7 @@ const port = 4000;
 const upload1 = multer({ storage: multer.memoryStorage() });
 
 // Firebase Admin SDK
-const serviceAccount = require('D:/NEW WEB/web/catastrophe/src/alumniportal-9e858-firebase-adminsdk-fbsvc-ad60f28e4c.json');
+const serviceAccount = require('D:/Alumni_Portal/catastrophe/src/alumniportal-9e858-firebase-adminsdk-fbsvc-ad60f28e4c.json');
 
 admin.initializeApp({
   credential: admin.credential.cert(serviceAccount),
