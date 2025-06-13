@@ -1,0 +1,68 @@
+.dashboard-container {
+  padding: 40px;
+  min-height: 100vh;
+  background: linear-gradient(to right, #e3f2fd, #ffffff);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.welcome-text {
+  text-align: right;
+  font-size: 2rem;
+  color: #0d6efd;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.subtext {
+  text-align: right;
+  font-size: 1.5rem;
+  color: #17a2b8;
+  font-weight: 400;
+  margin-bottom: 30px;
+}
+
+.userlist-container {
+  margin-top: 20px;
+  background-color: #ffffff;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.events-button {
+  margin: 10px 0 20px 0;
+  padding: 10px 20px;
+  background-color: #1a2c6e;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.events-button:hover {
+  background-color: #142259;
+}
+
+.events-button {
+  padding: 12px 24px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+}
+
+.pulse {
+  animation: pulseAnim 1.5s infinite;
+}
+
+@keyframes pulseAnim {
+  0% { transform: scale(1); }
+  25% { transform: scale(1.2); }
+  50% { transform: scale(0.8); }
+  75% { transform: scale(1.2); }
+  100% { transform: scale(1); }
+}

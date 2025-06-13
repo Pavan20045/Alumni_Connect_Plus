@@ -1,0 +1,28 @@
+.card-box {
+  background-color: rgba(38, 26, 148, 0.5);
+  border: 1px solid black;
+  padding: 30px;
+  width: 35%;
+  height: 475px;
+  border-radius: 60px;
+  text-align: center;
+  box-shadow: 0 14px 28px rgba(38, 26, 148, 0.5);
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.3s ease;
+}
+
+.card-box:hover {
+  background-color: #0a1172;
+}
+
+.heading-text {
+  color: black;
+  background-color: #ccc;
+  padding: 5px 10px;
+  border-radius: 8px;
+  margin: 10px 0;
+}

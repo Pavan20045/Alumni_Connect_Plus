@@ -1,0 +1,278 @@
+.edit-profile-container {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #fafafa;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.back-button {
+  background: none;
+  border: none;
+  color: #007bff;
+  font-size: 16px;
+  cursor: pointer;
+  margin-bottom: 15px;
+}
+
+.back-button:hover {
+  text-decoration: underline;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Profile photo section */
+.profile-photo-container {
+  position: relative;
+  width: 140px;
+  height: 140px;
+  margin: 0 auto 30px auto;
+}
+
+.profile-photo {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+}
+
+.edit-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  cursor: pointer;
+  transition: opacity 0.3s ease-in-out;
+  font-weight: bold;
+}
+
+.profile-photo-container:hover .edit-overlay {
+  opacity: 1;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 180px 1fr 80px;
+  align-items: center;
+  gap: 10px;
+}
+
+span {
+  border: none;
+  background-color: transparent;
+}
+
+input[type="text"],
+input[type="date"],
+input[type="number"],
+span {
+  width: 100%;
+  padding: 6px 8px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+label {
+  flex: 1;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+input[type="text"],
+input[type="date"],
+input[type="number"] {
+  flex: 2;
+  padding: 6px 10px;
+  font-size: 14px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+}
+
+span {
+  flex: 2;
+  font-size: 14px;
+  color: #333;
+  word-wrap: break-word;
+}
+
+.edit-button {
+  background-color: #203e8d;
+  border: 1px solid #ccc;
+  padding: 6px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.edit-button:hover {
+  background-color: #ddd;
+  color:black;
+}
+
+.save-button {
+  margin-top: 30px;
+  padding: 10px 20px;
+  background-color: #28a745;
+  border: none;
+  border-radius: 6px;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  align-self: flex-end;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.save-button:hover {
+  background-color: #218838;
+}
+
+.edit-profile-container {
+  max-width: 600px;
+  margin: auto;
+  margin-top: 20px;
+  padding: 20px;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.edit-profile-container h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.profile-photo-container {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  margin: 0 auto 30px auto;
+}
+
+.profile-photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+}
+
+.edit-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 30%;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  text-align: center;
+  line-height: 50px;
+  border-radius: 0 0 50% 50%;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.profile-photo-container:hover .edit-overlay {
+  opacity: 1;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 150px 1fr 70px;
+  align-items: center;
+  gap: 10px;
+}
+
+.form-row label {
+  font-weight: bold;
+  text-align: left;
+}
+
+.form-row input[type="text"],
+.form-row input[type="date"],
+.form-row input[type="number"],
+.form-row span {
+  padding: 8px 10px;
+  font-size: 14px;
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.form-row span {
+  border: none;
+  background: transparent;
+}
+
+.edit-button {
+  background-color: #1a2c7b;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.edit-button:hover {
+  background-color: #0e1b5b;
+}
+
+.save-button {
+  margin-top: 30px;
+  padding: 12px;
+  background-color: #1a2c7b;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.save-button:hover {
+  background-color: #0e1b5b;
+}
+
+.back-button {
+  background: none;
+  border: none;
+  font-size: 16px;
+  color: #1a2c7b;
+  cursor: pointer;
+  margin-bottom: 10px;
+}

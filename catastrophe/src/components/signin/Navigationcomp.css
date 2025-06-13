@@ -1,0 +1,32 @@
+/* Reset margins and paddings globally */
+body, html {
+  margin: 0;
+  padding: 0;
+}
+
+/* Navigation bar wrapper */
+.navbar-wrapper {
+  background-color: #f8f9fa; /* optional */
+  margin: 20px;
+  margin-bottom: 0px;
+  padding: 10px 20px;
+  width: 100%;
+}
+
+/* Ensure ul has no default spacing */
+.nav {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* Highlight active link */
+.active {
+  color: darkgreen !important;
+  font-size: 1.3rem;
+}
+
+/* Optional spacing removal for h2 */
+.brand h2 {
+  margin: 0;
+}

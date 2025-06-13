@@ -1,0 +1,7 @@
+/* App.css */
+.App {
+  font-family: sans-serif;
+  min-height: 100vh;
+  background: none !important;
+  background-color: #f8f9fa; /* optional light background */
+}
