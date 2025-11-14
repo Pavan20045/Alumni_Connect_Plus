@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: alumni-portal-deployment
+  labels:
+    app: alumni-portal
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: alumni-portal
+  template:
+    metadata:
+      labels:
+        app: alumni-portal
+    spec:
+      containers:
+        - name: alumni-portal
+          image: alumni-portal-app:latest    # ✅ Matches your local image
+          imagePullPolicy: Never             # ✅ Prevents Kubernetes from trying to pull from Docker Hub
+          ports:
+            - containerPort: 4000
+          env:
+            - name: NODE_ENV
+              value: "production"

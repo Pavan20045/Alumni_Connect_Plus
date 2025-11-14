@@ -1,0 +1,7 @@
+spec:
+  template:
+    spec:
+      containers:
+        - name: alumni-portal
+          image: alumni-portal-app:latest
+          imagePullPolicy: Never

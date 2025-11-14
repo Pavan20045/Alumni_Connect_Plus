@@ -1,0 +1,6 @@
+services:
+  alumni_portal_server:
+    build: .
+    container_name: alumni_portal_server
+    ports:
+      - "4000:4000"
